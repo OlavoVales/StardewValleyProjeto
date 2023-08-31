@@ -1,8 +1,8 @@
 import styles from "./LocalizacaoComponent.module.css"
 
-function LocalizacaoComponent({ id }) {
+function LocalizacaoComponent({ item }) {
     return (
-        <p>Localização: {id.localizacao}</p>
+        <p>Localização: {item.localizacao}</p>
     )
 }
 

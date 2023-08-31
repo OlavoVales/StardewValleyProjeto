@@ -1,8 +1,8 @@
 import styles from "./MelhoriasComponent.module.css"
 
-function MelhoriasComponent({ id }) {
+function MelhoriasComponent({ item }) {
     return (
-        <p>Melhorias: {id.melhorias}</p>
+        <p>Melhorias: {item.melhorias}</p>
     )
 }
 

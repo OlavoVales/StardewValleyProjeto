@@ -1,8 +1,8 @@
 import styles from "./DescricaoComponent.module.css"
 
-function DescricaoComponent({ id }) {
+function DescricaoComponent({ item }) {
     return (
-        <p>Descrição: {id.descricao}</p>
+        <p>Descrição: {item.descricao}</p>
     )
 }
 

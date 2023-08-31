@@ -1,8 +1,8 @@
 import styles from "./ChanceDeAcertoCriticoComponent.module.css"
 
-function ChanceDeAcertoCriticoComponent({ id }) {
+function ChanceDeAcertoCriticoComponent({ item }) {
     return (
-        <p>Chance de Acerto Crítico: {id.chance-de-acerto-critico}</p>
+        <p>Chance de Acerto Crítico: {item.chance-de-acerto-critico}</p>
     )
 }
 

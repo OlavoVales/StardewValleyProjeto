@@ -1,8 +1,8 @@
 import styles from "./EstatisticasComponent.module.css"
 
-function EstatisticasComponent({ id }) {
+function EstatisticasComponent({ item }) {
     return (
-        <p>Estatísticas: {id.estatisticas}</p>
+        <p>Estatísticas: {item.estatisticas}</p>
     )
 }
 

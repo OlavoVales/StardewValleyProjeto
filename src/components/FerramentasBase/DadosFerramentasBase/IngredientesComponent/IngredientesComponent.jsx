@@ -1,8 +1,8 @@
 import styles from "./IngredientesComponent.module.css"
 
-function IngredientesComponent({ id }) {
+function IngredientesComponent({ item }) {
     return (
-        <p>Ingredientes: {id.ingredientes}</p>
+        <p>Ingredientes: {item.ingredientes}</p>
     )
 }
 

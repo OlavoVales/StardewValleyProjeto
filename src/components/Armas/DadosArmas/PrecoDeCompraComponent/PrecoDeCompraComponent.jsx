@@ -1,8 +1,8 @@
 import styles from "./PrecoDeCompraComponent.module.css"
 
-function PrecoDeCompraComponent({ id }) {
+function PrecoDeCompraComponent({ item }) {
     return (
-        <p>Preço de Compra: {id.preco-de-compra}</p>
+        <p>Preço de Compra: {item.preco-de-compra}</p>
     )
 }
 

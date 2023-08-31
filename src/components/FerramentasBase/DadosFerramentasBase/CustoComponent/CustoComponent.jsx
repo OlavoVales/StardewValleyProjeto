@@ -1,8 +1,8 @@
 import styles from "./CustoComponent.module.css"
 
-function CustoComponent({ id }) {
+function CustoComponent({ item }) {
     return (
-        <p>Custo: {id.custo}</p>
+        <p>Custo: {item.custo}</p>
     )
 }
 

@@ -1,8 +1,8 @@
 import styles from "./DanoComponent.module.css"
 
-function DanoComponent({ id }) {
+function DanoComponent({ item }) {
     return (
-        <p>Dano: {id.dano}</p>
+        <p>Dano: {item.dano}</p>
     )
 }
 

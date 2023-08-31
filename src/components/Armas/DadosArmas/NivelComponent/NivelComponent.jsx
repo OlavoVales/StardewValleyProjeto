@@ -1,8 +1,8 @@
 import styles from "./NivelComponent.module.css"
 
-function NivelComponent({ id }) {
+function NivelComponent({ item }) {
     return (
-        <p>Nível: {id.nivel}</p>
+        <p>Nível: {item.nivel}</p>
     )
 }
 

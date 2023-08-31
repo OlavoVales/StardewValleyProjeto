@@ -1,8 +1,8 @@
 import styles from "./NomeComponent.module.css"
 
-function NomeComponent({ id }) {
+function NomeComponent({ item }) {
     return (
-        <p>Nome: {id.nome}</p>
+        <p>Nome: {item.nome}</p>
     )
 }
 
