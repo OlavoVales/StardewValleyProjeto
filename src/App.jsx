@@ -15,23 +15,23 @@ function App() {
   function renderTabContent() {
     switch(activeTab) {
       case "Tab 1":
-        return <ConjuntosArmas tipo-item="espadas" />
+        return <ConjuntosArmas tipoitem="espadas" />
       case "Tab 2":
-        return <ConjuntosArmas tipo-item="adagas" />
+        return <ConjuntosArmas tipoitem="adagas" />
       case "Tab 3":
-        return <ConjuntosArmas tipo-item="clavas" />
+        return <ConjuntosArmas tipoitem="clavas" />
       case "Tab 4":
-        return <ConjuntosFerramentasBase tipo-item="enxadas" />
+        return <ConjuntosFerramentasBase tipoitem="enxadas" />
       case "Tab 5":
-        return <ConjuntosFerramentasBase tipo-item="picaretas" />
+        return <ConjuntosFerramentasBase tipoitem="picaretas" />
       case "Tab 6":
-        return <ConjuntosFerramentasBase tipo-item="machados" />
+        return <ConjuntosFerramentasBase tipoitem="machados" />
       case "Tab 7":
-        return <ConjuntosFerramentasBase tipo-item="regadores" />
+        return <ConjuntosFerramentasBase tipoitem="regadores" />
       case "Tab 8":
-        return <ConjuntosFerramentasBase tipo-item="lixeiras" />  
+        return <ConjuntosFerramentasBase tipoitem="lixeiras" />  
       case "Tab 9":
-        return <ConjuntoVarasDePesca tipo-item="varas-de-pesca" />  
+        return <ConjuntoVarasDePesca tipoitem="varas-de-pesca" />  
     }
   }
 

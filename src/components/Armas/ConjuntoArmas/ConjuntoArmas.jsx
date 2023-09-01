@@ -10,10 +10,10 @@ import LocalizacaoComponent from "../DadosArmas/LocalizacaoComponent/Localizacao
 import PrecoDeCompraComponent from "../DadosArmas/PrecoDeCompraComponent/PrecoDeCompraComponent.jsx"
 import PrecoDeVendaComponent from "../DadosArmas/PrecoDeVendaComponent/PrecoDeVendaComponent.jsx"
 
-function ConjuntosArmas({ lista }) {
+function ConjuntosArmas({ tipoitem }) {
 
     const [ itens, setItens ] = useState([])
-    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${lista}-stardew-valley.json`
+    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${tipoitem}-stardew-valley.json`
 
     useEffect(() => {
         const buscarItens = async () => {

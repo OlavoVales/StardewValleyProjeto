@@ -6,10 +6,10 @@ import CustoComponent from "../DadosVarasDePesca/CustoComponent/CustoComponent.j
 import RequisitosComponent from "../DadosVarasDePesca/RequisitosComponent/RequisitosComponent.jsx"
 import MelhoriasComponent from "../DadosVarasDePesca/MelhoriasComponent/MelhoriasComponent.jsx"
 
-function ConjuntosVarasDePesca({ lista }) {
+function ConjuntosVarasDePesca({ tipoitem }) {
 
     const [ itens, setItens ] = useState([])
-    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${lista}-stardew-valley.json`
+    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${tipoitem}-stardew-valley.json`
 
     useEffect(() => {
         const buscarItens = async () => {

@@ -6,10 +6,10 @@ import CustoComponent from "../DadosFerramentasBase/CustoComponent/CustoComponen
 import IngredientesComponent from "../DadosFerramentasBase/IngredientesComponent/IngredientesComponent.jsx"
 import MelhoriasComponent from "../DadosFerramentasBase/MelhoriasComponent/MelhoriasComponent.jsx"
 
-function ConjuntosFerramentasBase({ lista }) {
+function ConjuntosFerramentasBase({ tipoitem }) {
 
     const [ itens, setItens ] = useState([])
-    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${lista}-stardew-valley.json`
+    const url = `https://raw.githubusercontent.com/OlavoVales/StardewValleyAPI/main/${tipoitem}-stardew-valley.json`
 
     useEffect(() => {
         const buscarItens = async () => {
