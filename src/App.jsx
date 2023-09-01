@@ -1,33 +1,110 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+import "./App.css"
+import ConjuntosArmas from "./components/Armas/ConjuntosArmas/ConjuntosArmas.jsx"
+import ConjuntosFerramentasBase from "./components/FerramentasBase/ConjuntosFerramentasBase/ConjuntosFerramentasBase.jsx"
+import ConjuntoVarasDePesca from "./components/VarasDePesca/ConjuntoVarasDePesca/ConjuntoVarasDePesca.jsx"
+import Card from "./components/Card"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [ activeTab, setActiveTab ] = useState("Tab 1")
+
+  function handleChangeTab(tabName) {
+    setActiveTab(tabName)
+  }
+
+  function renderTabContent() {
+    switch(activeTab) {
+      case "Tab 1":
+        return <ConjuntosArmas tipo-item="espadas" />
+      case "Tab 2":
+        return <ConjuntosArmas tipo-item="adagas" />
+      case "Tab 3":
+        return <ConjuntosArmas tipo-item="clavas" />
+      case "Tab 4":
+        return <ConjuntosFerramentasBase tipo-item="enxadas" />
+      case "Tab 5":
+        return <ConjuntosFerramentasBase tipo-item="picaretas" />
+      case "Tab 6":
+        return <ConjuntosFerramentasBase tipo-item="machados" />
+      case "Tab 7":
+        return <ConjuntosFerramentasBase tipo-item="regadores" />
+      case "Tab 8":
+        return <ConjuntosFerramentasBase tipo-item="lixeiras" />  
+      case "Tab 9":
+        return <ConjuntoVarasDePesca tipo-item="varas-de-pesca" />  
+    }
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Lista de Armas e Ferramentas - Stardew Valley</h1>
+      
+      <section className="knockout_table">
+        
+        <div className="tabs">
+          <button
+            className={ activeTab === "Tab 1" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 1")}
+          >
+            Espadas
+          </button>
+          <button
+            className={ activeTab === "Tab 2" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 2")}
+          >
+            Adagas
+          </button>
+          <button
+            className={ activeTab === "Tab 3" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 3")}
+          >
+            Clavas
+          </button>
+          <button
+            className={ activeTab === "Tab 4" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 4")}
+          >
+            Enxadas
+          </button>
+          <button
+            className={ activeTab === "Tab 5" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 5")}
+          >
+            Picaretas
+          </button>
+          <button
+            className={ activeTab === "Tab 6" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 6")}
+          >
+            Machados
+          </button>
+          <button
+            className={ activeTab === "Tab 7" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 7")}
+          >
+            Regadores
+          </button>
+          <button
+            className={ activeTab === "Tab 8" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 8")}
+          >
+            Lixeiras
+          </button>
+          <button
+            className={ activeTab === "Tab 9" ? "active" : "" }
+            onClick={() => handleChangeTab("Tab 9")}
+          >
+            Varas de Pesca
+          </button>
+        </div>
+
+        <div className="tab_content">
+          { renderTabContent() }
+        </div>
+
+      </section>
+
     </>
   )
 }
