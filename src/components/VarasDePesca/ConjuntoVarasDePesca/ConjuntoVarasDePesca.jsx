@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import styles from "./ConjuntoVarasDePesca.module.css"
-import ImagensComponent from "../ConjuntoVarasDePesca/ImagensComponent/ImagensComponent.jsx"
-import NomeComponent from "../ConjuntoVarasDePesca/NomeComponent/NomeComponent.jsx"
-import CustoComponent from "../ConjuntoVarasDePesca/CustoComponent/CustoComponent.jsx"
-import RequisitosComponent from "../ConjuntoVarasDePesca/RequisitosComponent/RequisitosComponent.jsx"
-import MelhoriasComponent from "../ConjuntoVarasDePesca/MelhoriasComponent/MelhoriasComponent.jsx"
+import ImagensComponent from "../DadosVarasDePesca/ImagensComponent/ImagensComponent.jsx"
+import NomeComponent from "../DadosVarasDePesca/NomeComponent/NomeComponent.jsx"
+import CustoComponent from "../DadosVarasDePesca/CustoComponent/CustoComponent.jsx"
+import RequisitosComponent from "../DadosVarasDePesca/RequisitosComponent/RequisitosComponent.jsx"
+import MelhoriasComponent from "../DadosVarasDePesca/MelhoriasComponent/MelhoriasComponent.jsx"
 
 function ConjuntosVarasDePesca({ lista }) {
 

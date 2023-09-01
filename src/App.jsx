@@ -1,9 +1,8 @@
 import { useState } from "react"
 import "./App.css"
-import ConjuntosArmas from "./components/Armas/ConjuntosArmas/ConjuntosArmas.jsx"
-import ConjuntosFerramentasBase from "./components/FerramentasBase/ConjuntosFerramentasBase/ConjuntosFerramentasBase.jsx"
-import ConjuntoVarasDePesca from "./components/VarasDePesca/ConjuntoVarasDePesca/ConjuntoVarasDePesca.jsx"
-import Card from "./components/Card"
+import ConjuntosArmas from "./components/Armas/ConjuntoArmas/ConjuntoArmas"
+import ConjuntosFerramentasBase from "./components/FerramentasBase/ConjuntoFerramentasBase/ConjuntoFerramentasBase"
+import ConjuntoVarasDePesca from "./components/VarasDePesca/ConjuntoVarasDePesca/ConjuntoVarasDePesca"
 
 function App() {
 
