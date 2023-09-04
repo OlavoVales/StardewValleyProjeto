@@ -2,7 +2,7 @@ import styles from "./PrecoDeCompraComponent.module.css"
 
 function PrecoDeCompraComponent({ item }) {
     return (
-        <p>Preço de Compra: {item.preco-de-compra}</p>
+        <p>Preço de Compra: {item.precodecompra}</p>
     )
 }
 
