@@ -24,13 +24,13 @@ function ConjuntosVarasDePesca({ tipoitem }) {
         <section className={styles.itens}>
             {
                 itens.map( item => (
-                    <div key={item.id} className={styles.item}>
-                        <ImagensComponent item={item} />
-                        <NomeComponent item={item} />
-                        <CustoComponent item={item} />
-                        <RequisitosComponent item={item} />
-                        <MelhoriasComponent item={item} />
-                    </div>
+                    <tr key={item.id} className={styles.item}>
+                        <td><ImagensComponent item={item} /></td>
+                        <td><NomeComponent item={item} /></td>
+                        <td><CustoComponent item={item} /></td>
+                        <td><RequisitosComponent item={item} /></td>
+                        <td><MelhoriasComponent item={item} /></td>
+                    </tr>
                 ))
             }
         </section>

@@ -28,17 +28,17 @@ function ConjuntosArmas({ tipoitem }) {
         <section className={styles.itens}>
             {
                 itens.map( item => (
-                    <div key={item.id} className={styles.item}>
-                        <ImagensComponent item={item} />
-                        <NomeComponent item={item} />
-                        <DescricaoComponent item={item} />
-                        <DanoComponent item={item} />
-                        <EstatisticasComponent item={item} />
-                        <ChanceDeAcertoCriticoComponent item={item} />
-                        <LocalizacaoComponent item={item} />
-                        <PrecoDeCompraComponent item={item} />
-                        <PrecoDeVendaComponent item={item} />
-                    </div>
+                    <tr key={item.id} className={styles.item}>
+                        <td><ImagensComponent item={item} /></td>
+                        <td><NomeComponent item={item} /></td>
+                        <td><DescricaoComponent item={item} /></td>
+                        <td><DanoComponent item={item} /></td>
+                        <td><EstatisticasComponent item={item} /></td>
+                        <td><ChanceDeAcertoCriticoComponent item={item} /></td>
+                        <td><LocalizacaoComponent item={item} /></td>
+                        <td><PrecoDeCompraComponent item={item} /></td>
+                        <td><PrecoDeVendaComponent item={item} /></td>
+                    </tr>
                 ))
             }
         </section>
