@@ -42,7 +42,7 @@ button:focus, button:focus-visible {
 }
 
 td {
-  border: 1px solid #08649c;
+  border: 2px solid #08649c;
   border-collapse: collapse;
   width: 10%;
 }
