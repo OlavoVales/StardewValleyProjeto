@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from "./ConjuntoVarasDePesca.module.css"
+import styles from "../ConjuntoVarasDePesca/ConjuntoVarasDePesca.module.css"
 import ImagensComponent from "../DadosVarasDePesca/ImagensComponent/ImagensComponent.jsx"
 import NomeComponent from "../DadosVarasDePesca/NomeComponent/NomeComponent.jsx"
 import CustoComponent from "../DadosVarasDePesca/CustoComponent/CustoComponent.jsx"

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import styles from "./ConjuntoArmas.module.css"
+import styles from "../ConjuntoArmas/ConjuntoArmas.module.css"
 import ImagensComponent from "../DadosArmas/ImagensComponent/ImagensComponent.jsx"
 import NomeComponent from "../DadosArmas/NomeComponent/NomeComponent.jsx"
 import DescricaoComponent from "../DadosArmas/DescricaoComponent/DescricaoComponent.jsx"
